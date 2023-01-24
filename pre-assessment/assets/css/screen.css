@@ -1,0 +1,127 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+/*
+  * {
+	margin: 0px;
+	padding: 0px;
+} 
+*/
+/* The first line of code above uses * which means all elements, and sets all elements to a margin and padding to zero*/
+
+body {
+	text-align: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #171717;
+	font-size: 16px;
+	line-height: 1.5em;
+	background-image: url("../img/bg-tile.jpg");
+	background-repeat: repeat-x;
+	color: #CCC;
+}
+
+.header_img {
+    background:url(../img/header1.jpg) 0 0 no-repeat;
+    display:block;
+    height:140px;
+    text-indent:-99999em;
+    width:800px; 
+    overflow:hidden;
+}
+
+.alert{
+	background-color: #D93425;
+}
+
+
+#container {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	background-color: #FFF;
+	margin-top: 20px;
+	border: 1px solid #CCC;
+}
+#header {
+	
+}
+#header h1 a {
+}
+h2.content{
+	background-color: #D99C2B;
+	color: #014040;
+	
+}
+h3{
+	background-color: #D97B29;
+	color: #014040;
+}
+ h4{
+	background-color: #D99C2B;
+	color: #014040;
+ }
+#nav {
+	background-color: #000;
+}
+#nav ul {
+	list-style-type: none;
+	margin-left: 10px;
+}
+#nav ul li {
+	display: inline;
+	height: 35px;
+	line-height: 35px;
+}
+#nav ul li a {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 18px;
+}
+#nav ul li a:link, #nav ul li a:visited {
+	text-decoration: none;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	color: #FFF;
+}
+#nav ul li a:hover {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+#content {
+	margin: 20px;
+}
+#content p {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+#footer {
+	background-color: #000;
+	color: #FFF;
+	height: 25px;
+}
+#footer h6 {
+	font-size: 12px;
+	line-height: 25px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+a:hover {
+	background-color: #D99C2B;
+  }
+
+img{
+	float: right;
+	border: 5px solid #D99C2B;
+	
+}
