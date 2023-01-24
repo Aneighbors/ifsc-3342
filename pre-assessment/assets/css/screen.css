@@ -1,18 +1,8 @@
-html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
 
-/*
   * {
 	margin: 0px;
 	padding: 0px;
 } 
-*/
 /* The first line of code above uses * which means all elements, and sets all elements to a margin and padding to zero*/
 
 body {
@@ -23,11 +13,10 @@ body {
 	line-height: 1.5em;
 	background-image: url("../img/bg-tile.jpg");
 	background-repeat: repeat-x;
-	color: #CCC;
 }
 
 .header_img {
-    background:url(../img/header1.jpg) 0 0 no-repeat;
+    background:url("../img/header1.jpg") 0 0 no-repeat;
     display:block;
     height:140px;
     text-indent:-99999em;
@@ -116,12 +105,12 @@ h3{
 	margin-left: 20px;
 }
 
-a:hover {
+#content a:hover {
 	background-color: #D99C2B;
   }
 
 img{
 	float: right;
 	border: 5px solid #D99C2B;
-	
+	margin: 10px 0 10px 20px ;
 }
