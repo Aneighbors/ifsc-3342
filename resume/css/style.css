@@ -161,6 +161,98 @@ textarea {
   clear: both;
 }
 
+
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.img{max-width:100%;
+}
+
+.container{
+  margin: auto;
+  background:#D9C8BF;
+  width:480px;
+} 
+nav{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding:20px 20px 0px 20px;
+  grid-gap:5px;
+}
+
+nav a:link, nav a:visited{
+  background-color: #D97B73;
+  border: none;
+  color: black;
+  padding: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform:uppercase;
+  font-size: 16px;
+  cursor: pointer;
+  font-size:.75em;
+  transition-duration: 0.9s;
+}
+
+nav a:hover{
+   background:black;
+  color:#D97B73;
+}
+.primary{
+  Margin:auto;
+}
+p{
+  padding-right: 20px;
+}
+
+main{
+  padding: 20px;
+}
+h1{
+  text-align: center;
+}
+
+dl{
+  display: grid;
+  grid-template-rows:auto;
+  grid-template-columns:8em 1fr;
+  /*shorthand*/
+  grid-template: auto / 8em 1fr;
+  margin-left: 20px;
+}
+
+dt{
+  font-weight:800;
+  grid-column: 1;
+  padding: 20px 0;
+  border-bottom:1px solid black;
+  background-color: #D97B73;
+}
+
+dd{
+  margin:0;
+  grid-column: 2;
+  padding: 20px 0 0 10px;
+  border-bottom:1px solid black;
+ 
+}
+
+
+.job *[itemprop="jobTitle"], 
+.job *[itemprop="name"], 
+.job *[itemprop="url"], 
+.job *[itemprop="addressLocality"],
+.certificate *[itemprop="name"]
+{
+  display:block;
+}
+
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -244,4 +336,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-

@@ -25,7 +25,7 @@
 
 <body>
 
-  <header>
+  <header class="container">
     <!-- Main navigation -->
     <nav class="primary">
       <a href="#about">About</a>
@@ -35,21 +35,21 @@
     </nav>
   </header>
   <!-- Main -->
-  <main itemscope itemtype="http://schema.org/Person">
+  <main itemscope itemtype="http://schema.org/Person" class="container">
     <h1>Alyson Neighbors</h1>
     <section id="about">
-      <h2>Personal details</h2>
-      <img itemprop="image" src="https://fakeimg.pl/400/" alt="Alyson Neighbors">
-      <p itemprop="description">Statement of Intent</p>
+      <h2 class="visually-hidden">Personal details</h2>
+      <img clas="img" itemprop="image" src="img/resumepic.jpg" alt="Alyson Neighbors" height="400">
+      <p itemprop="description">I will be an asset to your team. I am dedicated, hardworking, and a quick learner. I decided to pursue my true passion in life-computers, after being a radiologic technologist for several years. My passion for my new career choice will be obvious in my work output. I can't wait to come work for you and help your company with the knowledge I have and further expand my skill set by learning from fellow employees.</p>
       <dl>
         <dt>Name</dt>
         <dd itemprop="name">
-          <span itemprop="givenName">First Name</span> <span itemprop="familyName">Last name</span>
+          <span itemprop="givenName">Alyson</span> <span itemprop="familyName">Neighbors</span>
         </dd>
         <dt>Date of birth</dt>
         <dd itemprop="birthDate"><time datetime="1976-10-12">04/04/1991</time></dd>
         <dt>Nationality</dt>
-        <dd itemprop="nationality">Nationality</dd>
+        <dd itemprop="nationality">United States</dd>
         <dt>Location</dt>
         <dd itemprop="homeLocation">Arkansas</dd>
         <dt>Telephone</dt>
@@ -80,9 +80,8 @@
       <h2>Skills</h2>
       <ul>
         <li class="skill">HTML</li>
-        <li class="skill">PHP</li>
-        <li class="skill">Java</li>
-        <li class="skill">Scss</li>
+        <li class="skill">JavaScript</li>
+        <li class="skill">CSS</li>
       </ul>
     </section>
     <section id="experience">
@@ -93,50 +92,67 @@
         <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
           <span itemprop="name">HealthCare Express</span>
           <span>November 2017 - Present</span>
-          <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+          <p itemprop="description">Take quality diagnostic images using a digital machine. Ran daily and monthly QC for the clinic.
+
+            Counted inventory and ordered supplies for the clinic. Drew patient's blood, performed EKGs, ran in house labs: CBC, A1C, strep/flu, etc. Checked patients in by getting their vitals and medical history. Got Prior Authorizations from insurance companies for outside imaging. Set up sterile trays and helped provider with minor procedures. Collected urine for in house and send out drug screens, as well as preformed breath alcohol testing.</p>
           <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-          <a itemprop="url" href="http://link-to-company.com">Company URL</a>
+          <a itemprop="url" href="http://link-to-company.com">https://www.gohce.com/</a>
           <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          <span itemprop="addressLocality">Anywhere,USA</span>
+          <span itemprop="addressLocality">23150 I-30 North
+            Bryant, AR 72022</span>
           </span>
           </span>
         </div>
       </article>
       <!-- Previous Jobs - Notice Slightly Different Format-->
       <article class="job" itemscope itemtype="http://schema.org/Organization">
-        <h3 itemprop="name">Senior Developer</h3>
+        <h3 itemprop="name">Student Radiologic Technologist</h3>
           <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">Company Name 2</span>
-          <a itemprop="url" href="http://link-to-company.com">Company URL</a>
+          <span itemprop="name">St. Vincent Family Clinic</span>
+          <a itemprop="url" href="http://link-to-company.com">https://www.chistvincent.com/hospitals-locations/clinics/primarycare-chenal</a>
           <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="addressLocality">Anywhere,USA</span>
+            <span itemprop="addressLocality">16221 St. Vincent Way, Little Rock, AR 72223</span>
           </span>
           </span>
-          <span itemprop="startDate" content="2006-02-21T20:00">February 2006</span>
-          <span itemprop="endDate" content="2009-02-21T20:00">February 2009</span>
-        <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+          <span itemprop="startDate" content="2006-02-21T20:00">2016</span>6</span>
+          <span itemprop="endDate" content="2009-02-21T20:00">2017</span>
+        <p itemprop="description">Provided the radiologist with diagnostic quality radiographs. Brought patients back, took their vitals and got their history. Ran lab work such as CBCs, A1Cs, flu test, strep. Ran daily quality control on the CBC machine, and run quality control test when opening a new box of flu, strep, pregnancy test, etc.</p>
       </article>
       <article class="job" itemscope itemtype="http://schema.org/Organization">
-        <h3 itemprop="name">Web Developer</h3>
+        <h3 itemprop="name">Teller/Customer Service Representative</h3>
           <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">Company Name 2</span>
-          <a itemprop="url" href="http://link-to-company.com">Company URL</a>
+          <span itemprop="name">First Security Bank</span>
+          <a itemprop="url" href="http://link-to-company.com">https://www.fsbank.com/</a>
           <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="addressLocality">Anywhere, USA</span>
+            <span itemprop="addressLocality">Benton, Ar USA</span>
           </span>
           </span>
-          <span itemprop="startDate" content="2004-01-21T20:00">January 2004</span>
-          <span itemprop="endDate" content="2006-02-21T20:00">February 2006</span>
-        <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+          <span itemprop="startDate" content="2004-01-21T20:00">February 2014</span>
+          <span itemprop="endDate" content="2006-02-21T20:00">June 2015</span>
+        <p itemprop="description">Provide customers with account services: opening & closing accounts, fraud, and any other account problems. Cross sell other bank products. Balance cash drawer at the end of the day </p>
       </article>
     </section>
     <section id="education">
       <h2>Education</h2>
       <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-        <h3 itemprop="description"><abbr title="Master of Science">BA</abbr>Web Design and Development</h3>
-          <span itemprop="name">University name 1</span>
-          <span itemprop="location" itemscope>Anywhere, USA</span>
-          <span>2005-2007</span>
+        <h3 itemprop="description"><abbr title="Master of Science">BA</abbr> Web Design and Development</h3>
+          <span itemprop="name">UALR</span>
+          <span itemprop="location" itemscope>Little Rock. Ar USA</span>
+          <span>Predicted Graduation: May 2024</span>
+      </article>
+      <h2>Education</h2>
+      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+        <h3 itemprop="description"><abbr title="Master of Science">Associates</abbr> Radiologic Technology</h3>
+          <span itemprop="name">Pulaski Tech</span>
+          <span itemprop="location" itemscope>Little Rock, Ar USA</span>
+          <span>2015-2017</span>
+      </article>
+      <h2>Education</h2>
+      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+        <h3 itemprop="description"><abbr title="Master of Science">BA</abbr> Applied Science</h3>
+          <span itemprop="name">Arkansas Tech</span>
+          <span itemprop="location" itemscope>Russelville, Ar USA</span>
+          <span>2009-2013</span>
       </article>
     </section>
   </main>

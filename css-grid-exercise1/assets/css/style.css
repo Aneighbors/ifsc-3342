@@ -29,11 +29,13 @@ html {
   background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.png");*/
   
   main {
-    margin: 25px auto;
+    width:90vw;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     background-color: rgba(205, 31, 31, 0.4);
     padding: 20px;
+    grid-gap: 0 20px;
   }
 
   header.primary{
