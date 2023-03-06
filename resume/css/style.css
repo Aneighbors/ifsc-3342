@@ -40,12 +40,15 @@ body{
   font-family: "ff-cocon-pro", sans-serif;
   font-weight: 400;
   font-style: normal;}
+
 p, li{
   font-family: "span", serif;
   font-weight: 600;
   font-style: normal;
 }
-
+.related-links li{ font-family: "ff-cocon-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;}
 
 /* ------ Fluid Images -------*/
 
@@ -78,7 +81,7 @@ body{
   line-height:1.6
 } 
 a:link, a:visited{
-  color:#cef2e8;
+  color: #cef2e8;
 }
 
 nav{
@@ -139,25 +142,38 @@ dl{
   grid-template-columns:8em 1fr;
   /*shorthand*/
   grid-template: auto / 8em 1fr;
-  color: #cef2e8;
+  color: #024959;
 }
 
 dt{
   font-weight:800;
   grid-column: 1;
   padding: 10px 0;
-  border-bottom:1px solid #cef2e8;
-  background-color: #026873;
+  border-bottom:1px solid #026873;
+  background-color: #D9B2A9;
 }
+
+dt:nth-of-type(odd) {
+  background: #026873;
+  color:#cef2e8;
+  border-bottom:1px solid #026873;
+}
+
 
 dd{
   margin:0;
   grid-column: 2;
   padding: 10px 0;
-  border-bottom:1px solid #cef2e8;
-  background-color: #026873;
- 
+  border-bottom:1px solid #026873;
+  background-color: #D9B2A9;
 }
+dd:nth-of-type(odd) {
+  background: #026873;
+  color:#cef2e8;
+  border-bottom:1px solid #026873;
+}
+
+
 .related-links{
   display:flex;
   justify-content:center;
@@ -185,7 +201,8 @@ dd{
 
  
 .related-links a:hover{
-  background:rgba(0,0,0,.95);
+    background:#cef2e8;
+   color:#026873;
 }
 
 .related-links li{
@@ -208,6 +225,7 @@ dd{
 .job *[itemprop="url"] {
   color: #024959;
 }
+
 .job h3{
   color: #026873;
   margin:20px 0 0 0;
@@ -218,6 +236,7 @@ dd{
 }
 h2{color: #024959;
 border-bottom: solid}
+
 footer{
   color:#d9b2A9;
   text-align:center;
