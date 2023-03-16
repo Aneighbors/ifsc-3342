@@ -192,7 +192,7 @@ dd:nth-of-type(odd) {
   color:#026873;
   text-transform:uppercase;
   font-size:.75em;
-   transition: background-color .5s ease;
+  transition: background-color .5s ease;
   color:#cef2e8;
   background:#026873;
 }
@@ -277,7 +277,7 @@ main.container{
 @media screen and (min-width:768px){
 
   main.container {
-    max-width:800px;
+    max-width: 800px;
     grid-template-columns: 36.5% 1fr;
     grid-template-areas:
       "title title"
@@ -294,7 +294,7 @@ main.container{
   #about{
   display:grid;
   grid-gap:10px;
-  grid-template-columns: 230px 110px auto;
+  grid-template-columns: 300px 90px auto;
   grid-template-areas:
     "bio bio details"
     "bio bio related";
@@ -321,5 +321,54 @@ main.container{
   font-weight: 700;
   font-style: normal;
 }
+
+}
+
+@media only screen and (min-width: 992px){
+  main.container {
+    max-width:1000px;
+    grid-template-columns: 460px 480px;
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "about about"
+      "skills experience"
+      ".... education";
+  }
+
+  main{
+    padding: 1px 20px 1px 20px;
+  }
+  
+  header.container{
+    max-width:1000px;
+  }
+
+  dd{
+    margin:0;
+    grid-column: 2;
+    padding: 20px;
+    border-bottom:1px solid #026873;
+    background-color: #D9B2A9;
+  }
+
+  dt{
+    font-weight:800; 
+    grid-column: 1;
+    padding: 20px 0 0 20px;
+    border-bottom:1px solid #026873;
+    background-color: #D9B2A9;
+  }
+
+  #about{
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: 460px 200px 290px;
+    grid-template-areas:
+      "details bio bio"
+      "related bio bio";
+  }
+
+  img{padding: 0 20px 0 20px}
 
 }
