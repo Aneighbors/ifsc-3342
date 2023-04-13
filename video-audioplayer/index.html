@@ -1,0 +1,41 @@
+<head>
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css"
+  rel="stylesheet"
+/>
+   <link href="css/style.css" rel="stylesheet">
+  
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+  </head>
+  
+  <body>
+    <video
+      id="my-video"
+      class="video-js vjs-theme-forest"
+      controls
+      preload="auto"
+      width="640"
+      height="264"
+      poster="../assets/img/hudsonfalls.jpg"
+      data-setup="{}"
+    >
+      <source src="../assets/media/hudson-shelter-falls.mp4" type="video/mp4" />
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
+        >
+      </p>
+    </video>
+
+    <p>I used <a href="https://videojs.com/getting-started">Videojs</a> to create this Forest themed video player.</p>
+  
+    <audio controls="controls">
+        <source src="../assets/media/thunder.mp3" type="audio/mp3" /><!-- Safari, Chrome, IE9+ -->
+        <a href="thunder.mp3">Download the Audio</a>
+        </audio>
+
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+  </body>
