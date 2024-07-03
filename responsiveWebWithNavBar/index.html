@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <img src="assets/img/logo.webp" alt="" class="logo" />
+            <ul class="nav-list">
+                <li><a href="#">Directorates</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        <img src="assets/img/menu.svg" alt="" class="menu-btn" />
+    </nav>
+    
+    <div class="main-content">
+        <h1 class="intro-heading">Our Mission</h1>
+        <p>The mission of the EAC centers on using immersive and interactive visualization research to solve complex, 
+            big data problems in industry, government and research organizations.
+        </p>
+        <button class="btn btn-primary">Our Directorates</button>
+    </div>
+    
+
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h1>Our Services</h1>
+                <div class="line"></div>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <img src="assets/img/service-1.png" alt="" />
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id temporibus eius enim, delectus quibusdam, 
+                        nobis veniam excepturi minima nostrum itaque harum iste assumenda officia dicta mollitia? 
+                        Voluptatibus nesciunt magnam adipisci!</p>
+                </div>
+                <div class="service">
+                    <img src="assets/img/service-2.png" alt="" />
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id temporibus eius enim, delectus quibusdam, 
+                        nobis veniam excepturi minima nostrum itaque harum iste assumenda officia dicta mollitia? 
+                        Voluptatibus nesciunt magnam adipisci!</p>
+                </div>
+                <div class="service">
+                    <img src="assets/img/service-3.png" alt="" />
+                    <h3>Content Creation</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id temporibus eius enim, delectus quibusdam, 
+                        nobis veniam excepturi minima nostrum itaque harum iste assumenda officia dicta mollitia? 
+                        Voluptatibus nesciunt magnam adipisci!</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="testimonial">
+        <div class="container">
+            <img src="assets/img/quote.png" alt=""/>
+            <h1>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci inventore at dolor amet dolore ducimus saepe, 
+                laudantium eum soluta pariatur voluptatum numquam quaerat quae ad, 
+                voluptates harum repudiandae neque esse?"
+            </h1>
+            <div class="profile">
+                <img src="assets/img/profile.png" alt="" />
+                <h4>Jane Miller</h4>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about-us">
+        <div class="container">
+            <div class="about-content">
+                <h4>About Us</h4>
+                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia at nesciunt totam dolores, 
+                    labore vero excepturi autem doloribus, dolorem iusto numquam nulla officiis illum corporis, 
+                    eum soluta nobis quia necessitatibus.
+                </p>
+                <button class="btn btn-primary">Let's Talk Now</button>
+            </div>
+            <div class="about-image">
+                <img src="assets/img/about.png" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <section id="questions">
+        <div class="container">
+            <h1>
+                QUESTIONS?
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Officia voluptates dolorem fugiat, quos in at possimus aspernatur saepe voluptatem, 
+                eius nisi dolore. Veniam fugit temporibus quasi perferendis id tempore placeat.
+            </p>
+            <button class="btn btn-primary">Let's Talk Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <img src="assets/img/logo-colored.png" alt="" class="footerLogo">
+            <p>Love Nature by Tyler Moore</p>
+        </div>
+    </footer>'
+
+    <script>
+        const navBtn = document.querySelector('.menu-btn')
+        const navList = document.querySelector('.nav-list')
+
+        navBtn.addEventListener("click", function(){
+            navList.classList.toggle("active");
+        });
+
+        window.onscroll =function() {myFunction()};
+        var navbar =document.getElementById("navbar");
+        var sticky =navbar.offsetTop;
+
+        function myFunction(){
+            if (window.pageYOffset >= sticky){
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky")
+            }
+        }
+    </script>
+
+</body>
+</html>

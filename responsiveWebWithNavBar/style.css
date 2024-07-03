@@ -9,21 +9,14 @@
 }
 
 :root{
-    --primary: #536942;
-    --secondary: #ffd936;
-    --white: #efefef;
+    --primary: #2d2057;
+    --secondary: #a39f9f;
+    --white:#F2F2F2;
 }
 
 body{
     font-family: "DM Sans", sans-serif;
     color: var(--primary);
-}
-
-#main{
-    background-image: url(assets/img/main.png);
-    min-height: 70vh;
-    background-position: bottom center;
-    background-size: cover;
 }
 
 a{
@@ -40,10 +33,17 @@ section{
     margin: 80px auto;
 }
 
+.logo{
+    max-width: 150px;
+}
+
 nav{
+    background-color: var(--white);
     display: flex; /*makes the parts of the nav be side by side instead of on top of each other*/
-    justify-content: space-between; /*makes each part push to the other side*/
+    justify-content: space-around; /*makes each part push to the other side*/
     align-items: center; /*aligns the nav list and logo where the list items are centered to the logo*/
+    padding: 15px;
+   
 }
 
 .nav-list{
@@ -54,7 +54,17 @@ nav{
 }
 
 .nav-list a {
-    color: var(--white);
+    color: var(--primary);
+}
+
+.sticky{
+    position:fixed;
+    top: 0;
+    width: 100%;
+}
+
+.stick + .main-content{
+    padding-top: 60px;
 }
 
 .btn{
@@ -78,26 +88,27 @@ nav{
 }
 
 .main-content{ 
+    background-image: url(assets/img/model-3211627_1280.jpg);
+    min-height: 70vh;
+    background-position: bottom center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    margin-top: 80px;
     color:var(--white);
+    padding-left: 200px;
+    
 }
 
 .main-content .intro-heading{
     font-size: 50px;
 }
 
-.main-content .main-heading{
-    font-size: 110px;
-    margin-top: -20px;
-}
-
 .main-content p{
-    max-width: 250px;
+    max-width: 500px;
     margin-bottom: 10px;
+   
 }
 
 .menu-btn{
@@ -245,7 +256,7 @@ footer .container{
 
     .nav-list{
         flex-direction: column;
-        background: gray;
+        background: var(--white);
         position: absolute;
         top: 0;
         display: none;
@@ -260,16 +271,15 @@ footer .container{
         display: block;
     }
 
-    .nav-list li:not(:last-child) {
+    .nav-list li {
         text-align: left;
         width: 100%;
         padding: 10px 30px;
-        border-bottom: 1px solid var(--white);
+        border-bottom: 1px solid var(--primary);
     }
 
-    .nav-list li:last-child {
-        margin-left: 10px;
-        margin-top: 10px;
+    .main-content{
+    padding: 10px;
     }
 
     #about-us .container {
