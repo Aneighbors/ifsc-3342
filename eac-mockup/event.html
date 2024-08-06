@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerging Analytic Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html"><img src="assets/img/logo.webp" alt="UALR EAC Logo" class="logo"></a>
+            <ul class="nav-list">
+                <li><a href="directorates.html">Directorates</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        <img src="assets/img/menu.svg" alt="menu" class="menu-btn">
+    </nav>
+    <section class="container">
+        <div class="section-title">
+            <h1>Virtual Reality Camp</h1>
+        <div>
+                    <p>July 22nd - 26th, 2024
+                        <br>
+                        12:00 PM - 5:00PM CDT</p>
+                    <p>July 29th - August 2nd, 2024
+                        <br>
+                        8:30 AM - 12:00PM CDT</p>
+
+                    <p>Attend in-person at the University of Arkansas at Little Rock Engineering and Information 
+                        Technology Building.</p>
+                    <p class="bold">Enroll in our popular Virtual Reality Summer Camp for an immersive experience 
+                        in crafting VR environments utilizing Unity game engine and Meta Quest 2 headsets. Under 
+                        the guidance of seasoned professionals, participants will craft interactive realms, design 
+                        unique characters, and develop gameplay elements.
+                    </p>    
+                    <p>
+                        July 22 – 26 Camp: Register here
+                    </p>
+                    <p>   
+                        July 29 – August 2 Camp: Sold out
+                    </p>    
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Back to Top</a></li>
+            </ul>
+            <img src="assets/img/logo.webp" alt="" class="footerLogo">
+            <p>Made with love by the EAC Webteam</p>
+        </div>
+    </footer>'
+
+    <script>
+        const navBtn = document.querySelector('.menu-btn')
+        const navList = document.querySelector('.nav-list')
+
+        navBtn.addEventListener("click", function(){
+            navList.classList.toggle("active");
+        });
+
+        window.onscroll =function() {myFunction()};
+        var navbar =document.getElementById("navbar");
+        var sticky =navbar.offsetTop;
+
+        function myFunction(){
+            if (window.pageYOffset >= sticky){
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky")
+            }
+        }
+    </script>
+
+</body>
+</html>

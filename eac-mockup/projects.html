@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerging Analytic Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html"><img src="assets/img/logo.webp" alt="UALR EAC Logo" class="logo"></a>
+            <ul class="nav-list">
+                <li><a href="directorates.html">Directorates</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        <img src="assets/img/menu.svg" alt="menu" class="menu-btn">
+    </nav>
+
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h1>Our Projects</h1>
+                <div class="line"></div>
+            </div>
+            <div class="projects">
+                <div class="project">
+                    <img src="assets/img/topoCollo.webp" alt="Tablet showing the Topography Project in action">
+                    <h3>Topography Collaboration “TopoCollo”</h3>
+                    <p>Topography Collaboration “TopoCollo” A significant challenge in the simulation of real 
+                        environments for multiple participants is the ability to network multiple and disparate 
+                        devices in</p>
+                </div>
+                <div class="project">
+                    <img src="assets/img/search-rescue.webp" alt="Helicopter flight Simulation">
+                    <h3>Search & Rescue Helicopter Training Simulator</h3>
+                    <p>
+                    Search & Rescue Helicopter Training Simulator Helicopter pilots need to train under all types 
+                    of circumstances. We aimed to focus on extreme flying conditions, time-critical
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="assets/img/maximus.webp" alt="UALR Mascot Maximus">
+                    <h3>Maximus AR</h3>
+                    <p>
+                     Maximus AR The Maximus AR (Augmented Reality) Application, or the Mascot AR Selfie, enables 
+                     fans attending the Jack Stephens Center for the Little Rock Trojans
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="assets/img/service-3.png" alt="">
+                    <h3>UA Little Rock – Discover Day ’23</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id temporibus eius enim, delectus quibusdam, 
+                        nobis veniam excepturi minima nostrum itaque harum iste assumenda officia dicta mollitia? 
+                        Voluptatibus nesciunt magnam adipisci!</p>
+                </div>
+                <div class="project">
+                    <img src="assets/img/service-3.png" alt="">
+                    <h3>UA Little Rock – Discover Day ’23</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id temporibus eius enim, delectus quibusdam, 
+                        nobis veniam excepturi minima nostrum itaque harum iste assumenda officia dicta mollitia? 
+                        Voluptatibus nesciunt magnam adipisci!</p>
+                </div>
+                <div class="project">
+                    <img src="assets/img/service-3.png" alt="">
+                    <h3>UA Little Rock – Discover Day ’23</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id temporibus eius enim, delectus quibusdam, 
+                        nobis veniam excepturi minima nostrum itaque harum iste assumenda officia dicta mollitia? 
+                        Voluptatibus nesciunt magnam adipisci!</p>
+                </div>
+                <div class="project">
+                    <img src="assets/img/service-3.png" alt="">
+                    <h3>UA Little Rock – Discover Day ’23</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id temporibus eius enim, delectus quibusdam, 
+                        nobis veniam excepturi minima nostrum itaque harum iste assumenda officia dicta mollitia? 
+                        Voluptatibus nesciunt magnam adipisci!</p>
+                </div>
+                <div class="project">
+                    <img src="assets/img/service-3.png" alt="">
+                    <h3>UA Little Rock – Discover Day ’23</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id temporibus eius enim, delectus quibusdam, 
+                        nobis veniam excepturi minima nostrum itaque harum iste assumenda officia dicta mollitia? 
+                        Voluptatibus nesciunt magnam adipisci!</p>
+                </div>
+                <div class="project">
+                    <img src="assets/img/service-3.png" alt="">
+                    <h3>UA Little Rock – Discover Day ’23</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id temporibus eius enim, delectus quibusdam, 
+                        nobis veniam excepturi minima nostrum itaque harum iste assumenda officia dicta mollitia? 
+                        Voluptatibus nesciunt magnam adipisci!</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Back to Top</a></li>
+            </ul>
+            <img src="assets/img/logo.webp" alt="" class="footerLogo">
+            <p>Made with love by the EAC Webteam</p>
+        </div>
+    </footer>'
+
+    <script>
+        const navBtn = document.querySelector('.menu-btn')
+        const navList = document.querySelector('.nav-list')
+
+        navBtn.addEventListener("click", function(){
+            navList.classList.toggle("active");
+        });
+
+        window.onscroll =function() {myFunction()};
+        var navbar =document.getElementById("navbar");
+        var sticky =navbar.offsetTop;
+
+        function myFunction(){
+            if (window.pageYOffset >= sticky){
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky")
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerging Analytic Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html"><img src="assets/img/logo.webp" alt="UALR EAC Logo" class="logo"></a>
+            <ul class="nav-list">
+                <li><a href="directorates.html">Directorates</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        <img src="assets/img/menu.svg" alt="menu" class="menu-btn">
+    </nav>
+    <section class="container">
+        <div class="section-title">
+            <h1>The Success of The VEX Robotics Summer Camp</h1>
+        </div>
+                    <img class="news" src="assets/img/robotic_camp.webp" alt="">
+                    <p>The Robotics camp has successfully wrapped. A huge thank you to all the participants, 
+                        volunteers, and instructors who made the camp an unforgettable experience. Special thanks 
+                        to KARK 4 and FOX16 for featuring our camp and the talent of the campers. All the support 
+                        and dedication have truly made a difference.
+                    </p>
+
+                    <p>More than 20 students in grades 5-8 took part in a robotics competition on June 14 to 
+                        celebrate the end of the UA Little Rock VEX Robotics Camp. Led by Dr. Sandra Leiterman, 
+                        managing director of the Cyber Arena, students gained valuable skills in robotics, 
+                        programming, and teamwork by utilizing VEX IQ to design, construct, and program their 
+                        robots.
+                    </p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Back to Top</a></li>
+            </ul>
+            <img src="assets/img/logo.webp" alt="" class="footerLogo">
+            <p>Made with love by the EAC Webteam</p>
+        </div>
+    </footer>'
+
+    <script>
+        const navBtn = document.querySelector('.menu-btn')
+        const navList = document.querySelector('.nav-list')
+
+        navBtn.addEventListener("click", function(){
+            navList.classList.toggle("active");
+        });
+
+        window.onscroll =function() {myFunction()};
+        var navbar =document.getElementById("navbar");
+        var sticky =navbar.offsetTop;
+
+        function myFunction(){
+            if (window.pageYOffset >= sticky){
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky")
+            }
+        }
+    </script>
+
+</body>
+</html>

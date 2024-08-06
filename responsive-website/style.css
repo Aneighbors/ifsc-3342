@@ -274,7 +274,6 @@ footer .container{
 
     #about-us .container {
         flex-direction: column;
-        gap:300px;
     }
 
     footer .container{

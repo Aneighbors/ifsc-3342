@@ -9,28 +9,36 @@
 }
 
 :root{
-    --primary: #2d2057;
+    --primary: #0f0e0f;
     --secondary: #a39f9f;
     --white:#F2F2F2;
 }
 
-body{
+body, pre{
     font-family: "DM Sans", sans-serif;
     color: var(--primary);
 }
 
+h3{
+    padding: 10px 0;
+}
 a{
     text-decoration: none;
 }
 
-.container{
+.container, .container-left, .container-right{
     max-width: 1200px;
-    padding: 16px;
+    padding: 15px;
     margin:auto;
 }
 
-section{
-    margin: 80px auto;
+.container-right{
+    background-color:var(--primary);
+    color: white;
+}
+
+.container-left{
+    background-color: white;
 }
 
 .logo{
@@ -40,11 +48,9 @@ section{
 nav{
     background-color: var(--white);
     display: flex; /*makes the parts of the nav be side by side instead of on top of each other*/
-    justify-content: space-around; /*makes each part push to the other side*/
+    justify-content: space-between; /*makes each part push to the other side*/
     align-items: center; /*aligns the nav list and logo where the list items are centered to the logo*/
-    padding: 15px;
-    margin-bottom: 10px;
-   
+    padding: 15px;   
 }
 
 .nav-list{
@@ -62,11 +68,17 @@ nav{
     position:fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
-.stick + .main-content{
+.sticky + .main-content{
     padding-top: 60px;
 }
+
+.sticky + .container{
+    padding-top: 60px;
+}
+
 
 .btn{
     padding: 12px 20px;
@@ -90,7 +102,7 @@ nav{
 
 .main-content{ 
     background-image: url(assets/img/model-3211627_1280.jpg);
-    min-height: 70vh;
+    min-height: 50vh;
     background-position: bottom center;
     background-size: cover;
     display: flex;
@@ -98,7 +110,7 @@ nav{
     align-items: flex-start;
     justify-content: center;
     color:var(--white);
-    padding-left: 200px;
+    padding: 0 90px 40px 130px;
     
 }
 
@@ -112,6 +124,10 @@ nav{
    
 }
 
+p{
+    padding-bottom: 10px;
+}
+
 .menu-btn{
     position: absolute;
     top: 20px;
@@ -121,20 +137,21 @@ nav{
     cursor: pointer;
 }
 
-.section-title h1{
+.section-title h1, .section-title h2{
     font-size: 50px;
-    text-align: center;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    padding-top: 75px;
+    margin: -60px auto 0 auto;
 }
 
-.section-title .line{
-    width: 250px;
-    height: 4px;
-    border: 10px;
-    background: var(--secondary);
-    margin:auto;
+
+#events{
+    background-color: var(--white);
+    padding: 30px 0;
 }
 
-.services{
+.events{
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -142,95 +159,143 @@ nav{
     flex-wrap: wrap;
 }
 
-.service {
+.event {
     width:350px;
 }
 
-.service img{
-    max-width: 100%;
+.event a, .event a:visited{
+    color: var(--primary)
+}
+
+
+.event img, .projects img{
+    width: 350px;
+    height: 300px;
     border-radius: 5px;
     transition: transform 0.2s ease;
 }
 
-.service img:hover{
+.event img:hover{
     transform: scale(1.01);
 }
 
-#testimonial {
-    background: #f1f2fa;
+#projects{
+    padding: 30px 0;
 }
 
-#testimonial .container{
+.projects{
+    margin-top: 40px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 600px;
-    gap: 30px;
-    padding: 50px 16px;
-}
-
-#testimonial h1{
-    font-size: 30px;
-    font-family: 'Forum', sans-serif;
-    text-align: center;
-
-}
-
-#testimonial .profile{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
-#about-us .container{
+.project {
+    width:350px;
+}
+
+.project img{
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.project img:hover{
+    transform: scale(1.01);
+}
+
+#directorates{
+    background-color: var(--white);
+    padding: 30px 0;
+}
+
+.directorate-list{
     display: flex;
-    align-items: center;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 10px 10px 10px 0;
     justify-content: space-between;
-    gap: 120px;
 }
 
-#about-us .container .about-content{
-    max-width: 500px;
+
+.directorate-list a {
+    color: var(--primary);
+    background-color: var(--white);
+    margin: 10px 10px 10px 0;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+
+.directorates{
+    margin-top: 40px;
     display: flex;
-    flex-direction: column;
-    gap:10px;
-    align-items: start;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
-#about-us .container .about-content h1{
-    font-family: "Forum",  sans-serif;
-    font-size: 50px;
+.directorate-right img{
+    width: 35%;
+    border-radius: 5px;
+    float: right;
+    clear: right;
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
 
-#questions{
-    min-height: 500px;
-    background-image: url(assets/img/main-2.png);
-    background-position: bottom center;
-    background-size: cover;
+.directorate-left img{
+    width: 50%;
+    border-radius: 5px;
+    float: left;
+    clear: left;
+    padding-right: 20px;
+    padding-bottom: 10px;
 }
 
-#questions .container{
-max-width: 500px;
-display: flex;
-flex-direction: column;
-gap: 16px;
-align-items: center;
-gap:16px;
-justify-content: center;
-height: 500px;
-text-align: center;
-text-align: center;
-margin-bottom: -90px;
+table{
+    border-collapse: collapse;
+    margin: 40px;
 }
 
-#questions h1{
-    font-size: 50px;
+table a:visited, table a{
+    color: maroon;
+}
+
+td{
+    padding-top: 10px;
+}
+
+
+tr:nth-child(even) {
+    background-color: var(--secondary);
+  }
+
+.date{
+font-weight: bold;
+vertical-align: top;
+padding-left: 10px;
+}
+
+
+td p{
+ padding-bottom: 20px;
+ padding-left: 20px;
+}
+
+.bold{
+font-weight: bold;
+}
+
+img.news {
+    display: block;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 footer{
-    margin-top: -60px;
     background-color: var(--white);
     margin-bottom: -20px;
 }
@@ -257,8 +322,27 @@ footer .container{
         max-width: 150px;
 }
 
-@media screen and (max-width:520px){
-    
+@media screen and (max-width:830px){
+
+    .main-content{ 
+        padding-left: 20px;
+        
+    }
+
+    .directorate-right img, .directorate-left img{
+        float: none;
+        display: block;
+        padding-bottom: 40px;
+        width:100%;
+        padding-right: 20px;
+     }
+}
+
+@media screen and (max-width:650px){
+    img{
+        width: 100%;
+    }
+
     .menu-btn {
         display: block;
     }
@@ -288,13 +372,43 @@ footer .container{
     }
 
     .main-content{
-    padding: 10px;
+    padding-top: 20px;
+    padding-right: 0;
+    margin: auto;
     }
 
-    #about-us .container {
-        flex-direction: column;
-        gap:300px;
+    .directorate-list{
+        display: block;
     }
+
+    
+.directorate-list li {
+  
+    margin: 25px 0 25px 25px;
+   
+}
+
+.directorate-list li:last-child {
+    margin-bottom: 10px;
+}
+
+p{
+    clear: both;
+    }
+
+    .event{
+        padding: 20px 0 10px 0;
+        margin: auto;
+    }
+    .projects{
+        padding: 20px 0 10px 0;
+        margin: auto;
+    }
+
+    .project{
+        padding-bottom: 20px;
+    }
+
 
     footer .container{
         flex-direction: column;

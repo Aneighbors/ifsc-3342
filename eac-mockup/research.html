@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerging Analytic Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html"><img src="assets/img/logo.webp" alt="UALR EAC Logo" class="logo"></a>
+            <ul class="nav-list">
+                <li><a href="directorates.html">Directorates</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        <img src="assets/img/menu.svg" alt="menu" class="menu-btn">
+    </nav>
+
+    <section class="container">
+            <div class="section-title">
+                <h1>Publications</h1>
+            </div>
+            <div class="publications">
+                <table>
+                    <tr>
+                      <td class="date">2023</td>
+                      <td><p>P. Huff, S. Leiterman, and J. P. Springer</p>
+                              
+                        <p class="bold">Cyber Arena: An Open-Source Solution for Scalable Cybersecurity Labs in the Cloud</p>
+                       
+                        <p>In: Proceedings of the 54th ACM Technical Symposium on Computing Science Education Vol. 1 (SIGCSE 2023). DOI: <a href="https://dl.acm.org/doi/10.1145/3545945.3569828">10.1145/3545945.3569828.</a></p>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class="date">2022</td>
+                        <td><p>F. Inácio and J. P. Springer</p>
+                                 
+                          <p class="bold">Fragment-History Volumes</p>
+                          
+                          <p>arXiv: <a href="https://arxiv.org/abs/2211.15460"> [cs.GR] </a></p>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td class="date">2022</td>
+                        <td><p>S. Akailvi, U. Gautam, P. Bhandari, H. Rashid, P. D. Huff, and J. P. Springer
+                             </p>
+                                 
+                          <p class="bold"> HELOT - Hunting Evil Life in Operational Technology</p>
+                          
+                          <p>IEEE Transactions on Smart Grid. DOI: <a href="https://ieeexplore.ieee.org/document/9951382"> 10.1109/TSG.2022.3222261 </a></p>
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td class="date">2021</td>
+                        <td><p>	J. Zhao, J. O. Wallgrün, P. Sajjadi, P. LaFemina, K. Lim, J. P. Springer, and A. Kippel
+                             </p>
+                                 
+                          <p class="bold">Longitudinal Effects in the Effectiveness of Educational Virtual Field Trips</p>
+                          
+                          <p> Journal of Educational Computing Research 60 [4], pp. 1008-1034. DOI:<a href="https://journals.sagepub.com/doi/10.1177/07356331211062925"> 10.1177/07356331211062925</a></p>
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td class="date">2020</td>
+                        <td><p>	Kyle Hooks, Wesley Ferguson, Pedro Morillo, and Carolina Cruz-Neira
+                             </p>
+                                 
+                          <p class="bold">Evaluating the user experience of omnidirectional VR walking simulators</p>
+                          
+                          <p>  Entertain. Comput. 34, DOI: <a href="https://www.sciencedirect.com/science/article/abs/pii/S1875952119301284?via%3Dihub"> 10.1016/j.entcom.2020.100352</a></p>
+                        </td>
+                    </tr>  
+                  </table>  
+                          
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Back to Top</a></li>
+            </ul>
+            <img src="assets/img/logo.webp" alt="" class="footerLogo">
+            <p>Made with love by the EAC Webteam</p>
+        </div>
+    </footer>'
+
+    <script>
+        const navBtn = document.querySelector('.menu-btn')
+        const navList = document.querySelector('.nav-list')
+
+        navBtn.addEventListener("click", function(){
+            navList.classList.toggle("active");
+        });
+
+        window.onscroll =function() {myFunction()};
+        var navbar =document.getElementById("navbar");
+        var sticky =navbar.offsetTop;
+
+        function myFunction(){
+            if (window.pageYOffset >= sticky){
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky")
+            }
+        }
+    </script>
+
+</body>
+</html>
