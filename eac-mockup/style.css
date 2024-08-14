@@ -9,7 +9,7 @@
 }
 
 :root{
-    --primary: #0f0e0f;
+    --primary: #171a19;
     --secondary: #a39f9f;
     --white:#F2F2F2;
 }
@@ -17,6 +17,8 @@
 body, pre{
     font-family: "DM Sans", sans-serif;
     color: var(--primary);
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 h3{
@@ -138,9 +140,8 @@ p{
 }
 
 .section-title h1, .section-title h2{
-    font-size: 50px;
+    font-size: 60px;
     padding-bottom: 10px;
-    text-decoration: underline;
     padding-top: 75px;
     margin: -60px auto 0 auto;
 }
