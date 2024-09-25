@@ -9,8 +9,8 @@
 }
 
 :root{
-    --primary: #012340;
-    --secondary: #0388A6;
+    --primary: #0D0D0D;
+    --secondary: #2B7B8C;
     --white:#F2F2F2;
 }
 
@@ -118,6 +118,7 @@ nav{
     outline: none;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 1.5em;
 }
 
 .btn-secondary{
@@ -293,18 +294,11 @@ table{
     margin: 40px;
 }
 
-table a:visited, table a{
-    color: maroon;
-}
 
 td{
     padding-top: 10px;
 }
 
-
-tr:nth-child(even) {
-    background-color: var(--secondary);
-  }
 
 .date{
 font-weight: bold;

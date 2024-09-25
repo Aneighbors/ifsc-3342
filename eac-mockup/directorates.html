@@ -54,12 +54,12 @@
         <p>Learn about the different concepts and avenues of research we focus on here at the EAC.
         </p>
         <ul class="directorate-list">
-            <li><a href="#1">Cybersecurity</a></li>
-            <li><a href="#2">Human Computer Interaction</a></li>
-            <li><a href="#3">Visualization</a></li>
-            <li><a href="#4">Machine Learning</a></li>
-            <li><a href="#5">Internet of Things</a></li>
-            <li><a href="#6">Health Informatics</a></li>
+            <li><a href="#cyber">Cybersecurity</a></li>
+            <li><a href="#hci">Human Computer Interaction</a></li>
+            <li><a href="#visualization">Visualization</a></li>
+            <li><a href="#machine_learning">Machine Learning</a></li>
+            <li><a href="#iot">Internet of Things</a></li>
+            <li><a href="#health">Health Informatics</a></li>
         </ul>
     </div>
     
@@ -67,7 +67,7 @@
     <section id="directorates">
         <div class="container-left">
             <div class="section-title">
-                <h2 id="1">Cybersecruity</h2>
+                <h2 id="cyber">Cybersecruity</h2>
             </div>
             <div class="directorates">
                 <div class="directorate-right">
@@ -98,7 +98,7 @@
         </div>
         <div class="container-right">
             <div class="section-title">
-                <h2 id="2">Human-Computer Interaction (HCI)</h2>
+                <h2 id="hci">Human-Computer Interaction (HCI)</h2>
             </div>
             <div class="directorates">
                 <div class="directorate-left">
@@ -136,7 +136,7 @@
         </div>
         <div class="container-left">
             <div class="section-title">
-                <h2 id="3">Visualization</h2>
+                <h2 id="visualization">Visualization</h2>
             </div>
             <div class="directorates">
                 <div class="directorate-right">
@@ -161,7 +161,7 @@
         </div>
         <div class="container-right">
             <div class="section-title">
-                <h2 id="4">Machine/Deep Learning​</h2>
+                <h2 id="machine_learning">Machine/Deep Learning​</h2>
             </div>
             <div class="directorates">
                 <div class="directorate-left">
@@ -195,7 +195,7 @@
         </div>
         <div class="container-left">
             <div class="section-title">
-                <h2 id="5">Ubiquitous Computing and IoT​</h2>
+                <h2 id="iot">Ubiquitous Computing and IoT​</h2>
             </div>
             <div class="directorates">
                 <div class="directorate-right">
@@ -235,7 +235,7 @@
         </div>
         <div class="container-right">
             <div class="section-title">
-                <h2 id="6">Health Informatics</h2>
+                <h2 id="health">Health Informatics</h2>
             </div>
             <div class="directorates">
                 <div class="directorate-left">
@@ -278,26 +278,8 @@
         </div>
     </footer>'
 
-    <script>
-        const navBtn = document.querySelector('.menu-btn')
-        const navList = document.querySelector('.nav-list')
-
-        navBtn.addEventListener("click", function(){
-            navList.classList.toggle("active");
-        });
-
-        window.onscroll =function() {myFunction()};
-        var navbar =document.getElementById("navbar");
-        var sticky =navbar.offsetTop;
-
-        function myFunction(){
-            if (window.pageYOffset >= sticky){
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky")
-            }
-        }
-    </script>
+    <script src="assets/js/script.js"></script>
+  
 
 </body>
 </html>

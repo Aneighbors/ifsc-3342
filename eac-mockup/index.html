@@ -172,44 +172,7 @@
         </div>
     </footer>'
 
-    <script>
-        const navBtn = document.querySelector('.menu-btn')
-        const navList = document.querySelector('.nav-list')
-
-        navBtn.addEventListener("click", function(){
-            navList.classList.toggle("active");
-        });
-
-        window.onscroll =function() {myFunction()};
-        var navbar =document.getElementById("navbar");
-        var sticky =navbar.offsetTop;
-
-        function myFunction(){
-            if (window.pageYOffset >= sticky){
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky")
-            }
-        }
-
-        var bannerStatus = 1;
-        var bannerTimer = 4000;
-
-        function bannerLoop( ){
-            if (bannerStatus === 1){
-                docement.getElementById("imageban1").style.right = "0px";
-                docement.getElementById("imageban1").style.zindex = "1000";
-                docement.getElementById("imageban2").style.right = "=1200px";
-                docement.getElementById("imageban2").style.zindex = "1500";
-                docement.getElementById("imageban3").style.right = "1200px";
-                docement.getElementById("imageban3").style.zindex = "500";
-                bannerStaus = 2;
-            }
-        }
-
-
-
-    </script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
